@@ -43,3 +43,6 @@ gem 'simple_form'
 
 #gem to manage users
 gem 'devise'
+
+#gem to upload files
+gem 'carrierwave'
