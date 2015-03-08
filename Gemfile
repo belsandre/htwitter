@@ -46,3 +46,6 @@ gem 'devise'
 
 #gem to upload files
 gem 'carrierwave'
+
+#gem to enable following
+gem 'acts_as_follower'
