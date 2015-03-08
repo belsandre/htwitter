@@ -21,7 +21,7 @@ class TweetsController < ApplicationController
 	end
 
 	def show
-		@tweets  = Tweet.find_by user_id: params[:id]
+		@tweets = Tweet.where(user_id: params[:id])
 	end
 
 	def tweet_params
