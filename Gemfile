@@ -49,3 +49,6 @@ gem 'carrierwave'
 
 #gem to enable following
 gem 'acts_as_follower'
+
+#gem for hashtags
+gem 'twitter-text', '~> 1.10.0'

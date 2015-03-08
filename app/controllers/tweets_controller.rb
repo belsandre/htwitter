@@ -20,6 +20,10 @@ class TweetsController < ApplicationController
 		@tweets  = Tweet.all
 	end
 
+	def show
+		@tweets  = Tweet.all.where(user: params[:id])
+	end
+
 	def tweet_params
 		params.require(:tweet).permit(:content)
 	end

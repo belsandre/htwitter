@@ -22,5 +22,6 @@ class ProfilesController < ApplicationController
 
 	def show
 		@profile = Profile.find(params[:id])
+		@tweets = Tweet.all
 	end
 end

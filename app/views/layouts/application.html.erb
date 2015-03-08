@@ -25,10 +25,9 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
    	<% if user_signed_in? %>
       <ul class="nav navbar-nav">
-        	<li>
-        		<%= link_to "New tweet", new_tweet_path %></li>
-        	<li>
-        		<%= link_to "Newsfeed", tweets_path %></li>
+        	<li><%= link_to "New tweet", new_tweet_path %></li>
+        	<li><%= link_to "Newsfeed", tweets_path %></li>
+          <li><%= link_to "My tweets", tweet_path(current_user.profile) %></li>
       </ul>
     <% end %>
       <ul class="nav navbar-nav navbar-right">
